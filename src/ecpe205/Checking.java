@@ -1,29 +1,24 @@
 package ecpe205;
 
 public class Checking extends Account
+{
+	public Checking(int accountNumber)
 	{
-	
-	public Checking(int acctNum) {
-		super(acctNum);
-		// TODO Auto-generated constructor stub
+		super(accountNumber);
 	}
 
 	public int getAccountNumber()
 	{
 		return accountNumber;
-	
 	}
-	
+
 	public double getBalance()
 	{
-		return accountNumber;
-		
+		return balance;
 	}
-	
+
 	public String getAccountInfo()
 	{
-		return null;
+		return("Checking Account Information\nAcct Num: " + getAccountNumber() + "\nBalance: " + getBalance());
 	}
 }
-
-
