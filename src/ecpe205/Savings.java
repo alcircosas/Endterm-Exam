@@ -1,20 +1,18 @@
 package ecpe205;
+
 public class Savings extends Account
 {
-	public Savings(int acctNum) {
-		super(acctNum);
-		// TODO Auto-generated constructor stub
-	}
-
 	private double interestRate;
 
+	public Savings(int accountNumber, double interest)
 	{
-
+		super(accountNumber);
+		setInterestRate(interest);
 	}
 
 	public void setInterestRate(double interest)
 	{
-
+		interestRate = interest;
 	}
 	public double getInterestRate()
 	{
@@ -28,12 +26,12 @@ public class Savings extends Account
 
 	public double getBalance()
 	{
-		return interestRate;
+		return balance;
 	}
 
 	public String getAccountInfo()
 	{
-		return null;
+		return("Savings Account Information\nAccount Number: " + getAccountNumber() + "\nBalance: " + getBalance() + "\nInterest Rate: " + getInterestRate() + "%");
 	}
 }
 
