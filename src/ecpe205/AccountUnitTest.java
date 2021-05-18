@@ -41,6 +41,6 @@ class AccountUnitTest {
 		accountArray[9] = new Savings(10, 0);
 		
 		for(int i = 0; i < accountArray.length; ++i)
-			System.out.println(accountArray[i].getAccountInfo() + "\n");
+			JOptionPane.showMessageDialog(null, accountArray[i].getAccountInfo() + "\n");
 	}
 }
